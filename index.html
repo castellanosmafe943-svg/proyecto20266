@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vidrios Tatan - venta e instalación de productos y servicios para vidriería.">
+    <title>Vidrios Tatan</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+    <!-- MENÚ PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="fa-solid fa-glass-water me-2"></i>Vidrios Tatan
+            </a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+                    
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Conózcanos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="inicio">
+        <!-- CARRUSEL -->
+        <section aria-label="Galería de Vidrios Tatan">
+            <div id="carouselVidrios" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselVidrios" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Imagen 1"></button>
+                    <button type="button" data-bs-target="#carouselVidrios" data-bs-slide-to="1"
+                            aria-label="Imagen 2"></button>
+                    <button type="button" data-bs-target="#carouselVidrios" data-bs-slide-to="2"
+                            aria-label="Imagen 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO5dPEycRlCPidF-exFWh81oqrYRdI3-eq_Z3irzUI0w&s=10"
+                            class="d-block w-100 carousel-img" alt="Trabajo de vidriería">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxIwS2HhZ4ewr7u7SNoEF4VFeJC551AUHelxTRKTWxg&s=10"
+                            class="d-block w-100 carousel-img" alt="Producto de vidrio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUB2gxQz9rlvhVgcXTukB0uu_Yzbb_72Dt2DYWU6GO3g&s=10"
+                            class="d-block w-100 carousel-img" alt="Instalación de vidrio">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselVidrios" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselVidrios" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+        <!-- SERVICIOS -->
+        <section id="servicios" class="py-5 services-section">
+            <div class="container">
+                <h2 class="mb-4 text-center text-white">Nuestros servicios</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card service-card h-50 shadow">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU4uU5oBdvWsMOKxAY8MU-ITzOazO0mJDPU7-VOdKVvg&s=10"
+                                class="card-img-top service-img" alt="Manijas para vidrios">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Venta de manijas</h5>
+                                <p class="card-text">
+                                    Contamos con un amplio surtido de manijas y accesorios para vidrios.
+                                </p>
+                                <a href="#contacto" class="btn btn-primary mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card h-50 shadow">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrx694khf2bIM6ZgRqRBvCoSPw8zCpG2aDVvo3jV3BEA&s=10"
+                                class="card-img-top service-img" alt="Siliconas para vidriería">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Venta de siliconas</h5>
+                                <p class="card-text">
+                                    Ofrecemos siliconas y productos para trabajos de instalación y mantenimiento.
+                                </p>
+                                <a href="#contacto" class="btn btn-primary mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card h-50 shadow">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVqi4IsSOGvU_K-tJu93LDNO8UXnjiSbIT4fnknAPfVg&s=10"
+                                class="card-img-top service-img" alt="Instalación de vidrios">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Servicios de instalación</h5>
+                                <p class="card-text">
+                                    Realizamos instalaciones de vidrios de forma segura y profesional.
+                                </p>
+                                <a href="#contacto" class="btn btn-primary mt-auto">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TESTIMONIOS -->
+        <section id="testimonios" class="py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center">Testimonios</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6">
+                        <div class="testimonial-card h-100">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>Excelente servicio, me ayudaron a mejorar el aspecto de mi hogar.</p>
+                            <strong>Humberto Contreras</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonial-card h-100">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>Muy profesionales y amables. Recomiendo 100% sus servicios.</p>
+                            <strong>Natalia Pérez</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- GALERÍA -->
+        <section class="py-5 gallery-section">
+            <div class="container">
+                <h2 class="mb-4 text-center">Nuestros trabajos</h2>
+                <div class="row g-3">
+                    <div class="col-6 col-md-3">
+                        <img src="https://img.magnific.com/vector-gratis/concepto-isometrico-ventanas-plastico-trabajador-masculino-haciendo-ilustracion-vector-instalacion-interiores_1284-79007.jpg?semt=ais_test_b&w=740&q=80" width="300px" height="300px"
+                            alt="Instalación de ventanas" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="https://img.magnific.com/vector-premium/hombre-profesional-uniforme-casco-protector-sosteniendo-instrumento-medicion-ventana-proceso-reparacion-hogar-tiempo-instalar-ventanas-plano-vector-ilustracion-plana_776652-2926.jpg?semt=ais_hybrid&w=740&q=80" width="300px" height="300px"
+                            alt="Instalación de ventanas" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="https://img.magnific.com/vector-premium/trabajadores-instalador-ventanas-upvc_8071-1369.jpg?semt=ais_hybrid&w=740&q=80" width="300px" height="300px"
+                            alt="Instalación de ventanas" class="gallery-img">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="https://img.magnific.com/vector-gratis/instalacion-reparacion-windows-servicios-puertas-ventanas-reemplazo-e-instalacion-concepto-contratista-reemplazo-puertas-ventanas_335657-713.jpg?semt=ais_hybrid&w=740&q=80" width="300px" height="300px"
+                            alt="Instalación de ventanas" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACTO -->
+        <section id="contacto" class="py-5 contact-section">
+            <div class="container text-center">
+                <h2>Contáctanos</h2>
+                <p class="mb-4">Solicita información sobre nuestros productos y servicios.</p>
+                <a href="mailto:vidriostatan@gmail.com" class="btn btn-primary me-2">
+                    <i class="fa-solid fa-envelope me-2"></i>Escribirnos
+                </a>
+                <a href="tel:+573000000000" class="btn btn-outline-primary">
+                    <i class="fa-solid fa-phone me-2"></i>Llamarnos
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 Vidrios Tatan. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

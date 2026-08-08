@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidriería Tatan - Tienda</title>
+    <link rel="stylesheet" href="./static/css/Style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <!-- CABECERA -->
+        <header id="cabecera">
+            <h1>Vidriería Tatan</h1>
+            <p>La mejor decisión para tus espacios</p>
+        </header>
+                <!-- MENÚ -->
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="about.html">CONOZCANOS</a></li>
+                <li><a href="product.html">PRODUCTOS</a></li>
+                <li><a href="shop.html">TIENDA</a></li>
+            </ul>
+        </div>
+        <!-- CONTENIDO -->
+        <main id="contenido">
+            <!-- INICIO -->
+            <section id="inicio" class="articulo">
+                <h2>Bienvenido a Vidriería Tatan</h2>
+                <p class="descripcion">
+                    Encuentra productos de vidrio de excelente calidad
+                    para tu hogar o negocio.
+                </p>
+            </section>
+            <!-- PRODUCTOS -->
+            <section id="productos" class="articulo">
+                <h2>Nuestros productos</h2>
+                <div id="lista-productos">
+                    <!-- PRODUCTO 1 -->
+                    <article class="producto">
+                        <div class="producto-icono">🪟</div>
+                        <h3>Ventana de vidrio</h3>
+                        <p>
+                            Ventana de vidrio de excelente calidad.
+                        </p>
+                        <p class="precio">$150.000</p>
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarAlCarrito(1, 'Ventana de vidrio', 150000)">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <!-- PRODUCTO 2 -->
+                    <article class="producto">
+                        <div class="producto-icono">🪞</div>
+                        <h3>Espejo</h3>
+                        <p>
+                            Espejo para hogar o negocio.
+                        </p>
+                        <p class="precio">$100.000</p>
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarAlCarrito(2, 'Espejo', 100000)">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <!-- PRODUCTO 3 -->
+                    <article class="producto">
+                        <div class="producto-icono">🚪</div>
+                        <h3>Puerta de vidrio</h3>
+                        <p>
+                            Puerta de vidrio moderna y resistente.
+                        </p>
+                        <p class="precio">$450.000</p>
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarAlCarrito(3, 'Puerta de vidrio', 450000)">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                    <!-- PRODUCTO 4 -->
+                    <article class="producto">
+                        <div class="producto-icono">🔑🔒</div>
+                        <h3>Manijas</h3>
+                        <p>
+                            manijas de alta seguridad.
+                        </p>
+                        <p class="precio">$150.000</p>
+                        <button
+                            class="btn-agregar"
+                            onclick="agregarAlCarrito(4, 'División de baño', 350000)">
+                            Agregar al carrito
+                        </button>
+                    </article>
+                </div>
+            </section>
+            <!-- CARRITO -->
+            <section id="carrito" class="articulo">
+                <h2>🛒 Carrito de compras</h2>
+                <div id="carrito-contenido">
+                    <p id="carrito-vacio">
+                        Tu carrito está vacío.
+                    </p>
+                </div>
+                <div id="total-carrito">
+                    <strong>Total:</strong>
+                    $<span id="total">0</span>
+                </div>
+            </section>
+            <!-- FORMULARIO DE COMPRA -->
+            <section id="contacto" class="articulo">
+                <h2>Datos del comprador</h2>
+                <form id="formulario-compra">
+                    <label for="nombre">Nombre completo:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+                    <label for="telefono">Teléfono:</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Escribe tu teléfono"
+                        required
+                    >
+                    <label for="email">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="correo@ejemplo.com"
+                        required
+                    >
+                    <label for="direccion">Dirección:</label>
+                    <input
+                        type="text"
+                        id="direccion"
+                        name="direccion"
+                        placeholder="Dirección de entrega"
+                        required
+                    >
+                    <label for="metodo_pago">Método de pago:</label>
+                    <select id="metodo_pago" name="metodo_pago" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Contra entrega">Contra entrega</option>
+                        <option value="Transferencia">Transferencia</option>
+                    </select>
+                    <button type="submit" class="btn-comprar">
+                        Realizar pedido
+                    </button>
+                </form>
+                <div id="mensaje"></div>
+            </section>
+        </main>
+        <!-- PIE -->
+        <footer id="pie">
+            <p>
+                &copy; Todos los derechos reservados, @Mafe 2026
+            </p>
+        </footer>
+    </div>
+    <script src="./static/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
