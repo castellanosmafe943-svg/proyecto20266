@@ -1,0 +1,205 @@
+/* =========================================
+VIDRERIA TATAN
+DISEÑO DE LA PÁGINA ABOUT
+   ========================================= */
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9eef2;
+    color: #333333;
+}
+
+/* =========================================
+CONTENEDOR
+   ========================================= */
+
+#contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+CABECERA
+   ========================================= */
+
+#cabecera {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+#cabecera h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#cabecera p {
+    font-size: 18px;
+}
+
+/* =========================================
+MENÚ
+   ========================================= */
+
+#menu {
+    background-color: #263238;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    display: block;
+    padding: 18px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* EFECTO CUANDO PASAS EL MOUSE */
+#menu a:hover {
+    background-color: #1976d2;
+    color: white;
+}
+
+/* =========================================
+CONTENIDO
+   ========================================= */
+
+#contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+    background-color: white;
+}
+
+/* =========================================
+ARTÍCULOS - MISIÓN Y VISIÓN
+   ========================================= */
+
+.articulo {
+    background-color: #f7f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 5px solid #1976d2;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.articulo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* TÍTULOS MISIÓN Y VISIÓN */
+.articulo h2 {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+/* TEXTO */
+.articulo p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #555555;
+}
+
+/* =========================================
+PIE DE PÁGINA
+   ========================================= */
+
+#pie {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#pie p {
+    font-size: 14px;
+}
+
+/* =========================================
+DISEÑO PARA CELULAR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    #contenedor {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #cabecera {
+        padding: 30px 15px;
+    }
+
+    #cabecera h1 {
+        font-size: 28px;
+    }
+
+    #cabecera p {
+        font-size: 15px;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu a {
+        padding: 14px;
+    }
+
+    #contenido {
+        grid-template-columns: 1fr;
+        padding: 25px 15px;
+    }
+
+    .articulo {
+        padding: 22px;
+    }
+
+    .articulo h2 {
+        font-size: 23px;
+    }
+
+    .articulo p {
+        font-size: 15px;
+    }
+}
